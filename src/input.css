@@ -15,18 +15,56 @@ header{
    
   }
 
+  /* DARK THEMA */
+
+  body.light {
+    background-color: #fff;
+    color: #111;
+  }
+
+  body.dark {
+    background-color: #222;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  button {
+    /*  background-color: #555; */
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 1px;
+     cursor: pointer;
+
+   }
+
+   button:hover {
+     /* background-color: #666; */
+     font-size: 18px;
+     transform: scale(1.05);
+     transition: 0.5s ease-out;
+   }
+
+   .light-icon::before {
+     content: "\1F31E";
+   }
+
+   .dark-icon::before {
+     content: "\1F319";
+   }
+
+   /* ANIMATION */
+
 .text{
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-right: 1px solid black;
+    border-right: 1px solid red;
     font-size: 200%;
     white-space: nowrap;
     overflow: hidden;
 }
-
-
 
 .animation{
   animation: typewriter 4s steps(20) 1s infinite both,
@@ -42,7 +80,7 @@ header{
   }
 }
 
-@keyframes blinkCursor{
+/* @keyframes blinkCursor{
   from {
     border-right-color: black;
   }
@@ -50,9 +88,28 @@ header{
     border-right-color: transparent;
   }
 }
-
+ */
 
 .main-img{
     height: 500px;
     width: 700px;
+}
+
+/* BACK TO TOP */
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 36px;
+  color: red;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.back-to-top-button:hover {
+  opacity: 1;
+  font-size: 36px;
 }
