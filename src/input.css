@@ -9,11 +9,7 @@ body {
   background-color: #fff;
 }
 
-header{
-    width: 100%;
-    height: 850px;
-   
-  }
+
 
   /* DARK THEMA */
 
@@ -28,7 +24,7 @@ header{
     border-color: #fff;
   }
 
-  button {
+  .back-to-top-button {
     /*  background-color: #555; */
      color: #fff;
      border: none;
@@ -38,7 +34,7 @@ header{
 
    }
 
-   button:hover {
+   .back-to-top-button:hover {
      /* background-color: #666; */
      font-size: 18px;
      transform: scale(1.05);
@@ -90,9 +86,26 @@ header{
 }
  */
 
+/* IMG */
+
 .main-img{
     height: 500px;
     width: 700px;
+}
+
+.main-img:hover{
+  margin-left: -10px;
+  transform: translate(-8px,-16px)rotate(3deg);
+  filter: drop-shadow(1px 1px 1px red);
+}
+
+.mini-img:hover{
+  filter: drop-shadow(2px 2px 2px red);
+}
+
+.project-img{
+  width: 400px;
+  height: 500px;
 }
 
 /* BACK TO TOP */
@@ -112,4 +125,94 @@ header{
 .back-to-top-button:hover {
   opacity: 1;
   font-size: 36px;
+}
+
+/* PROJECTS */
+
+
+.gallery{
+  padding: 2em ;
+  min-height: 120vh;
+}
+
+.button{
+  padding: 2em 0 6em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buttons button{
+  margin: 1em;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  border: none;
+  background: #111;
+  color: #fff;
+  border: 2px solid #111;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover, 
+.buttons .btn-clicked{
+  background: #fff;
+  color: #111;
+}
+
+.images{
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.images img{
+  width: 25em;
+  margin: 1em;
+  border-radius: 0.2em;
+  transition: 0.6s;
+}
+
+.images .img-expand{
+  width: 25em;
+  margin: 1em;
+}
+
+.images .img-shrink{
+  width: 0em;
+  margin: -1em;
+}
+
+@media  screen and(max-width: 1439px){.images {
+  max-width: 896px;
+}
+}
+
+@media screen and(max-width: 986px){
+  .images{
+      align-items: center;
+      flex-direction: column;
+  }
+  .images img{
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+  }
+}
+
+@media screen and(max-width: 600px){
+  .buttons button{
+      width: 100%;
+      display: block;
+  }
+  .images
+  .img-expand,
+  .images img{
+      width: 100%;
+  }
 }
