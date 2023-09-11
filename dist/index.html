@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,46 +11,66 @@
 
 <!-- HEADER -->
 <nav>
- <div class="p-6">
-  <h1 class="text-5xl  ml-6 font-semibold underline ">Buro<span class="text-red-600 font-semibold">W</span></h1>
-  <div class="grid justify-items-stretch">
-   <button id="themeButton" class="justify-self-end">
-   <span class="icon light-icon"></span>
- </div>
+  <div class="">
+    <span class="text-5xl ml-2   font-semibold underline "><a href="index.html">Buro<span class="text-red-600 font-semibold">W</span></a></span>
+    <div class="grid justify-items-stretch">
+     <button id="themeButton" class="justify-self-end">
+     <span class="icon light-icon"></span>
+   </div>
 </nav>
 
 <!-- ABOUT ME -->
- <div class="">
-  <img src="/imgs/DrawKit Vector Illustration Project Manager (9).png" alt="" class="main-img mt-24 ">
+ <div class="container mx-auto">
+  <img src="/imgs/DrawKit Vector Illustration Project Manager (9).png" alt="" class=" main-img mt-6 w-96 h-96 mb-32 ">
  </div>  
   <p class="text animation mt-16 uppercase">Hello I'm <span class="text-red-600">Buro</span></p>
-  <p class="text-xl text-center uppercase font-semibold mt-16 "> Welcome To <br>My  <span class="text-red-600">Personal Webpage</span>  </p>
+  <p class="text-xl text-center uppercase font-semibold mt-20 "> Welcome To <br>My  <span class="text-red-600">Personal Webpage</span>  </p>
   <div class="grid justify-items-stretch">
-    <img src="/imgs/DrawKit Vector Illustration Project Manager (5).png" alt="" class="main-img  justify-self-end  mt-24">
+    <img src="/imgs/DrawKit Vector Illustration Project Manager (5).png" alt="" class=" main-img  justify-self-end  mt-6 w-96 h-96">
   </div> 
   <p class="text-xl text-center uppercase font-semibold mt-16">I STARTED WRITING CODE<span class="text-red-600" id="firstDate"></span> <span id="lastDate" class="text-red-600"></span>  and <br>I'm  <span class="text-red-600">still improving </span>myself. I will share my projects in here.</p>
-  <img src="/imgs/DrawKit Vector Illustration Project Manager (15).png" alt="" class=" mt-24 w-36 ml-auto mr-auto mini-img">
+  <img src="/imgs/DrawKit Vector Illustration Project Manager (15).png" alt="" class=" mt-6 w-36 ml-auto mr-auto mini-img lane">
   </div>
   <div>
    <p class="text-xl text-center uppercase font-semibold mt-16">what I've finished so far</p>
  </div>
+
  <!-- LEARNED -->
-<div class="text-center mt-14 ">
- <span class="inline-grid grid-cols-3 gap-10">
-    <span class=" text-2xl border-solid border-2 border-red-500 rounded-xl hover:animate-pulse ">HTML</span>
-    <span class="text-2xl border-solid border-2 border-red-500 rounded-xl hover:animate-pulse ">CSS</span>
-    <span class="text-2xl  border-solid border-2 border-red-500 rounded-xl hover:animate-pulse">Bootstrap</span>
-    <span class="text-2xl border-solid border-2 border-red-500 rounded-xl hover:animate-pulse ">Tailwind</span>
-    <span class="text-2xl  border-solid border-2 border-red-500 rounded-xl hover:animate-pulse ">Javascript</span>
-    <span class="text-2xl border-solid border-2 border-red-500 rounded-xl hover:animate-pulse ">Typescript</span>
+
+<div class="text-center mt-14">
+
+  <span class="inline-grid grid-cols-1 sm:hidden md:hidden lg:hidden xl:hidden">
+      <!-- These elements will be hidden on screens larger than mobile phones -->
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">HTML&CSS</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">Bootstrap</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">TailWind</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">Javascript</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer mx-auto max-w-screen-xl">Typescript</span>
   </span>
+
+  <span class="hidden sm:inline-grid sm:grid-cols-2 md:inline-grid md:grid-cols-3 lg:inline-grid lg:grid-cols-4 xl:inline-grid xl:grid-cols-6 gap-4 ml-36">
+      <!-- These elements will be visible on screens larger than mobile phones -->
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">HTML&CSS</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">Bootstrap</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">TailWind</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">Javascript</span>
+      <span class="text-2xl border-solid rounded-xl hover:animate-pulse hover:text-red-500 cursor-pointer">Typescript</span>
+  </span>
+
 </div>
+
+
+
 <!-- PROJECT PAGE -->
 <div class="">
-  <img src="/imgs/DrawKit Vector Illustration Project Manager (20).png" alt="" class=" mt-24 w-36 ml-auto mr-auto mini-img">
+  <img src="/imgs/DrawKit Vector Illustration Project Manager (20).png" alt="" class=" docs mt-24 w-36 ml-auto mr-auto mini-img">
   <div class=" text-center mt-14">
     <div class="">
       <a href="projects.html" class="text-2xl hover:text-red-600 hover:text-3xl "><span class="text-red-600 text-3xl hover:text-2xl">&#8649;</span> Projects <span class="text-red-600 text-3xl hover:text-2xl">&#8647;</span></a>
+    <div class="">
+      <a href="https://youtube.com/@Buro-lo3jq?si=Cbrpw0CZvxyLsQC-" class="text-2xl hover:text-red-600 hover:text-3xl " target="_blank"><span class="text-red-600 text-3xl hover:text-2xl">&#8649;</span> Videos <span class="text-red-600 text-3xl hover:text-2xl">&#8647;</span></a>
+    </div>
+      <a href="blog.html" class="text-2xl hover:text-red-600 hover:text-3xl "><span class="text-red-600 text-3xl hover:text-2xl">&#8649;</span> Blog <span class="text-red-600 text-3xl hover:text-2xl">&#8647;</span></a>
     </div>
   </div>
 </div>
@@ -59,9 +79,9 @@
 <footer>
   <div class="flex justify-center mt-14 ">
     <div class=""> 
-      <a href="#" class="hover:text-red-400  hover:ease-in-out duration-300">
-      <i class="fa-brands fa-instagram text-2xl"></i>
-    </a>
+      <a href="https://github.com/WBuro" class="hover:text-red-400  hover:ease-in-out duration-300" target="_blank">
+      <i class="fa-brands fa-github text-2xl"></i>
+      </a>
   </div>
     <div class="ml-10">  
       <a href="#" class="hover:text-red-400  hover:ease-in-out duration-300">
@@ -72,16 +92,18 @@
       <a href="#" class="hover:text-red-400  hover:ease-in-out duration-300">
         <i class="fa-brands fa-discord text-2xl"></i>
       </a>
+      <a href="https://www.linkedin.com/in/burak-eser-a3bb21213/" class=" ml-10 hover:text-red-400  hover:ease-in-out duration-300" target="_blank">
+        <i class="fa-brands fa-linkedin text-2xl"></i>
+      </a>
     </div>
   </div>
-  <hr class="my-2  sm:mx-auto  lg:my-5 " />
-  <span class="block text-sm  sm:text-center ">© 2023 <a href="index.html" class="hover:underline">BuroW</a>. All Rights Reserved.</span>
+  <span class="block text-sm  sm:text-center mt-4">© 2023 <a href="index.html" class="hover:underline">BuroW</a>. All Rights Reserved.</span>
 </footer>
 
 
 
 <!-- BTN -->
-<button id="backToTopButton" class="back-to-top-button">↑</button>
+<button id="backToTopButton" class="back-to-top-button opacity-60">↑</button>
 
 
 
